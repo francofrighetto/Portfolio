@@ -1,0 +1,11 @@
+los estilos generales los cargue en styles.css
+para que me reconozco bootstrap puse en consola npm install bootstrap 
+ahi se me agg a node_modules y fui a angular.json y agrege en styles y script asi:
+"styles": [
+              "src/styles.css",
+              "node_modules/bootstrap/dist/css/bootstrap.css"
+            ],
+"scripts": ["node_modules/bootstrap/dist/js/bootstrap.bundle.js"]
+
+en index.html el encabezado si va como siempre
+pero lo que es body no lo ponemos ahi, sino en el app.component.html

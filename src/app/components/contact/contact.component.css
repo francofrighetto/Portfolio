@@ -1,0 +1,17 @@
+.contacto {
+    background:#3598db;
+    color:white;
+}
+
+input, textarea {
+    background-color: #1d6fa5;
+    border:none;
+}
+
+::placeholder { color: white; }
+
+button {
+    background-color: white;
+    color: #3498db;
+    border-radius: 5px;
+}

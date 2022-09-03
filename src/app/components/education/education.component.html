@@ -1,0 +1,16 @@
+<div class="educacion">
+<h2 class="text-center container pt-3">Education</h2>
+  <div class=" container pt-2 text-center" *ngFor="let dato of dataEducation">
+    <div class="row container mt-2" id="education"> 
+      <div class="d-flex justify-content-center">
+      <div class="card" style="width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title">{{dato.institucion}}</h5>
+          <p class="card-text">{{dato.especializacion}}</p>
+          <p class="card-text"><small class="text-muted">{{dato.fechaInicio}}-{{dato.fechaFin}}</small></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
