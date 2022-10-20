@@ -1,11 +1,11 @@
 <div class="habilidades container" id="skills">
     <h2 class=" text-center">Skills</h2>
 
-  <div class="row individuales">
-    <div class="col-3 columna text-center m-auto" *ngFor="let dato of datosSkills">
-      <img src={{dato.image}} width="50px">
-      <p class="col-8 m-auto pb-3">{{dato.nombre}}</p>
+    <div class="row individuales">
+        <div class="col-4 col-sm-3 columna text-center m-auto" *ngFor="let dato of datosSkills">
+            <img src={{dato.image}} width="50px">
+            <p class="col-8 m-auto pb-3">{{dato.nombre}}</p>
+        </div>
     </div>
-  </div>
 
 </div>

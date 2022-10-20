@@ -2,3 +2,25 @@ ul {
     list-style: none;
 }
 
+.barranav nav ul {
+    text-align: center;
+    list-style: none;
+    max-width: 100%;
+}
+
+nav ul a {
+    font-style: normal;
+}
+
+nav ul li:hover>ul {
+    display: block;
+}
+
+.width-100 {
+    width: 100%;
+    max-width: 100%;
+}
+
+li:hover {
+    background-color: rgb(220, 220, 220);
+}

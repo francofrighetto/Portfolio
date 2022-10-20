@@ -1,0 +1,83 @@
+<div class="text-center px-3" id="experience">
+    <h2 class="mt-4 mb-2">Experience</h2>
+    <a href="#timeline" (click)="izquierda()" class="me-5" id="a-izq">
+        <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+      </svg>
+    </a>
+
+    <a href="#timeline" (click)="mostrarTodo()" class="me-3 a-experience" id="a-all">All</a>
+    <a href="#timeline" (click)="mostrarExperience()" class="me-3 a-experience" id="a-work">Work</a>
+    <a href="#timeline" (click)="mostrarEducation()" class="ms-3 a-experience" id="a-edu">Education</a>
+
+
+    <a href="#timeline" (click)="derecha()" class="ms-5" id="a-der">
+
+        <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+      </svg>
+    </a>
+
+</div>
+
+<div class="mb-2 mt-2">
+    <div class="timeline" id="all">
+        <div class="main-timeline" *ngFor="let dato of timeline2 ">
+            <div class="container {{paridad[dato.id%2]}}  ">
+                <div class="date">{{dato.desde}}-{{dato.hasta}}</div>
+                <img src="../../../assets/svg/{{dato.svg}}" class="icon">
+                <div class="content {{dato.ambito}}">
+                    <h2>{{dato.nombre}}</h2>
+                    <p>
+                        {{dato.especializacion}}
+                    </p>
+                    <p class="categoria">
+                        {{dato.categoria}}
+                    </p>
+                </div>
+                {{dato.extra}}
+            </div>
+        </div>
+    </div>
+    <div class="timeline" id="work">
+        <div *ngFor="let dato of timeline2 ">
+            <div class="main-timeline" *ngIf="dato.ambito=='trabajo'">
+                <div class="container {{paridad[dato.id%2]}}">
+                    <div class="date">{{dato.desde}}-{{dato.hasta}}</div>
+                    <img src="../../../assets/svg/{{dato.svg}}" class="icon">
+                    <div class="content {{dato.ambito}}">
+                        <h2>{{dato.nombre}}</h2>
+                        <p>
+                            {{dato.especializacion}}
+                        </p>
+                        <p class="categoria">
+                            {{dato.categoria}}
+                        </p>
+                    </div>
+                    {{dato.extra}}
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="timeline" id="education">
+        <div *ngFor="let dato of timeline2 ">
+            <div class="main-timeline" *ngIf=" dato.ambito=='estudio' || dato.ambito=='curso'">
+                <div class="container {{paridad[dato.id%2]}}  ">
+                    <div class="date">{{dato.desde}}-{{dato.hasta}}</div>
+                    <img src="../../../assets/svg/{{dato.svg}}" class="icon">
+                    <div class="content {{dato.ambito}}">
+                        <h2>{{dato.nombre}}</h2>
+                        <p>
+                            {{dato.especializacion}}
+                        </p>
+                        <p class="categoria">
+                            {{dato.categoria}}
+                        </p>
+                    </div>
+                    {{dato.extra}}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

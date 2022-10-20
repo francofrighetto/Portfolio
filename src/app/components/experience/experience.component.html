@@ -1,2 +1,47 @@
-<h2 class="text-center">Experience</h2>
 <div class="experience" id="experience"></div>
+<h2 class="text-center mt-3">Experience</h2>
+
+<section>
+    <div class="container py-5">
+        <div class="main-timeline" *ngFor="let dato of dataExperience">
+            <div class="timeline {{paridad[dato.id%2]}}">
+
+                <div class="card">
+                    <div class="card-body p-4">
+                        <h3>{{dato.lugar}}</h3>
+                        <p class="text-muted">{{dato.desde}}-{{dato.hasta}}</p>
+                        <p class="mb-0">{{dato.descripcion}}</p>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!-- ejemplos de como va izquierda y derecha
+                 <div class="timeline left">
+                <div class="card">
+                    <div class="card-body p-4">
+                        <h3>Nuestra Institución</h3>
+                        <p class="text-muted">22 septiembre, 1957</p>
+                        <img src="../img/institucional/nuestra-institucion.jpg" width="100%">
+                        <p class="mb-0">Fundación de La Cooperativa de Electricidad, Obras y Servicios Públicos de «La Playosa» Ltda La Cooperativa de Electricidad, Obras y Servicios Públicos de «La Playosa» Ltda. se fundó el 22 de setiembre de 1957 con el objeto de
+                            solucionar la provisión de energía eléctrica de la localidad ante la inminente…</p>
+                    </div>
+                </div>
+            </div>
+            <div class="timeline right" id="agua-potable">
+                <div class="card">
+                    <div class="card-body p-4">
+                        <h3>Se inaugura el servicio de distribución de agua potable</h3>
+                        <p class="text-muted">15 septiembre, 1984</p>
+                        <img src="../img/institucional/agua-potable.jpg" width="100%">
+
+                        <p class="mb-0">Posteriormente el 15 de octubre de 1984 en coincidencia con los Festejos Patronales en honor a Santa Teresa de Jesús, se inaugura el servicio de distribución de agua potable domiciliaria mediante captación que se efectúa desde
+                            el Primer y Segundo Acueducto Villa María- San Francisco, sirviendo en la actualidad a…</p>
+                    </div>
+                </div>
+            </div> -->
+
+        </div>
+    </div>
+</section>

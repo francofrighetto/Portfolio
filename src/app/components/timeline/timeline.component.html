@@ -1,0 +1,66 @@
+<div class="text-center px-3" id="experience">
+    <h2>Experience</h2><br>
+
+    <a href="#timeline" (click)="izquierda()" class="me-5" id="a-izq">
+
+        <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+      </svg>
+    </a>
+
+    <a href="#timeline" (click)="mostrarExperience()" class="me-3" id="a-exp">Work</a>
+    <a href="#timeline" (click)="mostrarEducation()" class="ms-3" id="a-edu">Education</a>
+
+
+    <a href="#timeline" (click)="derecha()" class="ms-5" id="a-der">
+
+        <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+      </svg>
+    </a>
+
+</div>
+
+<div class="contenido ">
+    <section id="experience2">
+        <div class="container py-5 ">
+            <div class="main-timeline" *ngFor="let dato of dataExperience ">
+                <div class="timeline {{paridad[dato.id%2]}} ">
+
+                    <div class="card mb-3">
+                        <div class="card-body p-4 my-4">
+                            <h3>{{dato.lugar}}</h3>
+                            <p class="text-muted ">{{dato.desde}}-{{dato.hasta}}</p>
+                            <!-- <p class="mb-0 ">{{dato.descripcion}}</p> -->
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+            </div>
+        </div>
+    </section>
+
+    <section id="education2">
+        <div class="container py-5 ">
+            <div class="main-timeline py-2" *ngFor="let dato of dataEducation ">
+                <div class="timeline {{paridad[dato.id%2]}} ">
+
+                    <div class="card ">
+                        <div class="card-body p-4 ">
+                            <h3>{{dato.nombre}}</h3>
+                            <p>{{dato.institucion}}</p>
+                            <p>{{dato.ambito}}</p>
+                            <p class="text-muted ">{{dato.desde}}-{{dato.hasta}}</p>
+                            <p class="mb-0 ">{{dato.descripcion}}</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+</div>

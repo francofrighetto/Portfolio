@@ -15,6 +15,11 @@ import {HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatIconModule } from "@angular/material/icon";
 import { ExperienceComponent } from './components/experience/experience.component';
+import { TimelineComponent } from './components/timeline/timeline.component';
+// import { AppRoutingModule } from './app-routing.module';
+import { LoginComponent } from './components/login/login.component';
+import { Timeline2Component } from './components/timeline2/timeline2.component';
+import { ProjectIdeaCarouselComponent } from './components/project-idea-carousel/project-idea-carousel.component';
 
 @NgModule({
   declarations: [
@@ -28,15 +33,23 @@ import { ExperienceComponent } from './components/experience/experience.componen
     SkillsComponent,
     ContactComponent,
     FooterComponent,
-    ExperienceComponent
+    ExperienceComponent,
+    TimelineComponent,
+    LoginComponent,
+    Timeline2Component,
+    ProjectIdeaCarouselComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
     BrowserAnimationsModule,
-    MatIconModule
+    MatIconModule,
+    // AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule { 
+
+  
+}

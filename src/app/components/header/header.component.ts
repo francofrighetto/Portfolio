@@ -11,9 +11,28 @@ export class HeaderComponent implements OnInit {
   constructor(private datosPortfolio:DatosPortfolioService) { }
 
   datosHeader:any;
+
+  // Login(){
+  //   this.router.navigate();
+  // }
+
   ngOnInit(): void {
     this.datosPortfolio.obtenerDatos().subscribe(data =>{ 
       this.datosHeader=data.header;
     });
   }
+
+
+  mostrarPerfil(){
+    const login = document.getElementById("login");
+
+    if (login!= null){
+      console.log(login.style.display);
+      login.style.display="inline";
+      
+      
+    }
+  }
+
+
 }
