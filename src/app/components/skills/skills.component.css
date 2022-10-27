@@ -1,0 +1,41 @@
+.front {
+    background-color: rgb(92, 157, 255);
+}
+
+.back {
+    background-color: rgb(57, 111, 193);
+}
+
+.row {
+    max-width: 100%;
+}
+
+.otros {
+    max-width: 100%;
+}
+
+@media (max-width: 1000px) {
+    .front,
+    .back {
+        margin-left: 2%;
+    }
+}
+
+@media (max-width: 800px) {
+    .front,
+    .back {
+        margin-left: 3%;
+    }
+}
+
+@media (max-width: 600px) {
+    .front,
+    .back {
+        margin-left: 4%;
+    }
+}
+
+.col-len {
+    width: 90px;
+    max-width: 90px;
+}

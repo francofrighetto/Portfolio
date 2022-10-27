@@ -72,16 +72,15 @@
 
             <!-- lista del header, que van dentro del menu expandible o se muestran normal-->
             <div class="collapse navbar-collapse row" id="navbarNavDropdown">
-                <ul class="navbar-nav justify-content-center ps-3">
-                    <li class="nav-item" *ngFor="let dato of datosHeader">
-                        <a class="nav-link active" href={{dato.href}}>{{dato.title}}</a>
-
+                <ul class="navbar-nav justify-content-center ps-3" *ngIf="header!=undefined">
+                    <li class="nav-item" *ngFor="let dato of header">
+                        <a class="nav-link active" href={{dato.referencia}}>{{dato.titulo}}</a>
                     </li>
 
                 </ul>
             </div>
         </div>
-        <a class="me-0" (click)="mostrarPerfil()">Perfil</a>
+        <a class="me-0" href="#" (click)="mostrarPerfil()">Perfil</a>
     </nav>
 </header>
 

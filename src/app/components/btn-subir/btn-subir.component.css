@@ -1,0 +1,30 @@
+.floating-btn {
+    border-radius: 26.5px;
+    background-color: #001F61;
+    border: 1px solid #001F61;
+    box-shadow: 0 16px 22px -17px #03153B;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 20px;
+    padding: 15px 20px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
+}
+
+.floating-btn:hover {
+    background-color: #033ab3;
+    color: rgb(223, 222, 222);
+}
+
+.floating-btn:focus {
+    outline: none;
+}
+
+#a-btn-subir {
+    color: white;
+    list-style: none;
+    text-decoration: none;
+}

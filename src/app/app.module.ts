@@ -20,6 +20,7 @@ import { TimelineComponent } from './components/timeline/timeline.component';
 import { LoginComponent } from './components/login/login.component';
 import { Timeline2Component } from './components/timeline2/timeline2.component';
 import { ProjectIdeaCarouselComponent } from './components/project-idea-carousel/project-idea-carousel.component';
+import { BtnSubirComponent } from './components/btn-subir/btn-subir.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { ProjectIdeaCarouselComponent } from './components/project-idea-carousel
     TimelineComponent,
     LoginComponent,
     Timeline2Component,
-    ProjectIdeaCarouselComponent
+    ProjectIdeaCarouselComponent,
+    BtnSubirComponent
   ],
   imports: [
     BrowserModule,

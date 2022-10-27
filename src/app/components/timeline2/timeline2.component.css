@@ -81,6 +81,7 @@ body {
     text-transform: uppercase;
     letter-spacing: 1px;
     z-index: 1;
+    font-size: large;
 }
 
 .container.left .date {
@@ -130,7 +131,7 @@ body {
 
 .container .content h2 {
     margin: 0 0 10px 0;
-    font-size: 18px;
+    font-size: 23px;
     font-weight: normal;
     /* color: #006E51; */
     color: white;
@@ -138,10 +139,8 @@ body {
 
 .container .content p {
     margin: 0;
-    font-size: 16px;
     line-height: 22px;
     /* color: #000000; */
-    color: white;
 }
 
 @media (max-width: 767.98px) {
@@ -228,4 +227,20 @@ a {
 #a-all:hover {
     padding: 8px;
     background-color: rgb(240, 240, 240);
+}
+
+.especializacion {
+    margin: 0 0 10px 0;
+    font-size: 20px;
+    font-weight: normal;
+    /* color: #006E51; */
+    color: white;
+}
+
+.categoria {
+    margin: 0 0 10px 0;
+    font-size: 18px;
+    font-weight: normal;
+    /* color: #006E51; */
+    color: rgb(218, 214, 214);
 }

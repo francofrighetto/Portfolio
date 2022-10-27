@@ -1,3 +1,45 @@
-.proyectos {
+/* .proyectos {
     background: #f2f2f5
+} */
+
+body {
+    justify-content: center;
+    font-family: sans-serif;
+    align-items: center;
+    display: flex;
+    height: 100vh;
+    margin: 0;
+    padding: 0 40px;
+}
+
+.course {
+    background-color: rgb(235, 235, 235);
+    border-radius: 10px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    max-width: 100%;
+    margin: 20px;
+    width: 80%;
+    margin: auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.course h2 {
+    letter-spacing: 1px;
+}
+
+.course-preview {
+    background-color: #2A265F;
+    color: #fff;
+    padding: 5% 0%;
+}
+
+.course-info {
+    padding: 2%;
+    max-width: 95%;
+}
+
+.width-100 {
+    max-width: 100%;
 }

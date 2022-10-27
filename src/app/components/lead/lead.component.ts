@@ -1,19 +1,25 @@
 import { Component, OnInit } from '@angular/core';
-import { DatosPortfolioService } from 'src/app/services/datos-portfolio.service';
+import {PersonabdService} from '../../personabd.service';
+import { Persona } from '../../Modelo/Persona';
 
 @Component({
   selector: 'app-lead',
   templateUrl: './lead.component.html',
   styleUrls: ['./lead.component.css']
 })
+
 export class LeadComponent implements OnInit {
 
-  constructor(private datosPortfolio:DatosPortfolioService) { }
-  fotoLead:any;
+  constructor(private service:PersonabdService) { }
+  personas:any;
+
+
   ngOnInit(): void {
-    this.datosPortfolio.obtenerDatos().subscribe(data =>{
-      this.fotoLead=data.fotolead;
+    this.service.getPersonas().subscribe(data =>{ 
+      this.personas=data;
+      this.personas=this.personas[0];
+
+      console.log(this.personas);
     });
   }
-
 }
