@@ -10,6 +10,10 @@ export class SobreMiComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    let posision = window.scrollY;
+    window.scrollY = 0;
+    console.log(posision);
+    
   }
 
 }

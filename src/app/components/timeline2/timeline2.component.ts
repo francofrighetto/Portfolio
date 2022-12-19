@@ -41,6 +41,11 @@ export class Timeline2Component implements OnInit {
       a_all.style.position = "static";
       a_edu.style.position = "relative";
 
+      a_edu.className += " linea";
+      a_all.classList.remove("linea");
+      a_work.classList.remove("linea");
+
+
     }
 
   }
@@ -72,6 +77,10 @@ export class Timeline2Component implements OnInit {
       a_all.style.position = "static";
       a_edu.style.position = "static";
 
+      a_work.className += " linea";
+      a_all.classList.remove("linea");
+      a_edu.classList.remove("linea");
+
     }
   }
 
@@ -100,6 +109,10 @@ export class Timeline2Component implements OnInit {
       a_work.style.position = "static";
       a_edu.style.position = "static";
       a_all.style.position = "relative";
+
+      a_all.className += " linea";
+      a_edu.classList.remove("linea");
+      a_work.classList.remove("linea");
     }
 
   }
@@ -134,7 +147,7 @@ export class Timeline2Component implements OnInit {
 
   ngOnInit(): void {
 
-    localStorage.setItem("experience", "all");
+    // localStorage.setItem("experience", "all");
     this.datosPortfolio.obtenerDatos().subscribe(data => {
       this.timeline2 = data.timeline2;
     });
@@ -159,7 +172,12 @@ export class Timeline2Component implements OnInit {
       work.style.display = "none";
 
       izq.style.color = "gray";
+
+      a_work.style.position = "";
+      a_edu.style.position = "";
       a_all.style.position = "relative";
+      a_all.className +=" linea";
+      
 
 
     }

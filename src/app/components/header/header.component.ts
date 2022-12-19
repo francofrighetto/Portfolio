@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DatosPortfolioService } from 'src/app/services/datos-portfolio.service';
 import {PersonabdService} from '../../personabd.service';
 @Component({
   selector: 'app-header',
@@ -7,19 +8,24 @@ import {PersonabdService} from '../../personabd.service';
 })
 export class HeaderComponent implements OnInit {
   // llamo a un servicio (haces datosPortfolio:DatosPortfolioService es como hacer String cadena (var y tipo, referencia))
-  constructor(private service:PersonabdService) { }
+  constructor(private service:PersonabdService, private serviceJSON:DatosPortfolioService) { }
 
   header:any;
+  headerJSON:any;
+
+  titulos_proyectos=["FrontEnd","BackEnd","Otros lenguajes","Otros"];
 
 
   ngOnInit(): void {
     this.service.getHeader().subscribe(data =>{ 
       this.header=data;
-      for (let dato of this.header){
-      console.log(dato);
-
-      }
     });
+
+    this.serviceJSON.obtenerDatos().subscribe(data=>{
+      this.headerJSON=data.header;
+      console.log(this.headerJSON);
+    })
+
   }
 
 
@@ -32,6 +38,10 @@ export class HeaderComponent implements OnInit {
       
       
     }
+  }
+
+  subirpx(){
+    window.scrollTo(0, 100);
   }
 
 

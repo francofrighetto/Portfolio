@@ -208,9 +208,11 @@ a {
     font-size: 23px;
 }
 
-#a-edu::after,
-#a-work::after,
-#a-all::after {
+#experience {
+    position: relative;
+}
+
+.linea::after {
     position: absolute;
     content: '';
     top: 100%;
@@ -222,8 +224,8 @@ a {
     background: #3498db
 }
 
-#a-edu:hover,
 #a-work:hover,
+#a-edu:hover,
 #a-all:hover {
     padding: 8px;
     background-color: rgb(240, 240, 240);

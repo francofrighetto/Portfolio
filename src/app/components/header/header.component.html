@@ -59,30 +59,55 @@
               <a class="nav-link active" href={{dato.href}}>{{dato.title}}</a>
             </li>
   -->
+<section id="inicio">
+    <div class="contenido">
+        <header>
+            <div class="contenido-header">
+                <nav id="nav" class="navbar navbar-expand-md">
 
-<header class="row width-100">
-    <nav class="navbar navbar-expand-lg bg-light m-0 ">
-        <div class="container-fluid">
-            <!-- boton expandible -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon ms-auto" type="text"></span>
-                <span class="ms-3">Menú</span>
-            </button>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                      </svg>
+                      Menú
+                    </span>
+                  </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul id="links" class="navbar-nav ps-2">
+                            <li class="nav-item" *ngFor="let dato of headerJSON">
+                                <a class="nav-link active" href={{dato.href}} (click)="subirpx()">{{dato.title}}</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
 
 
-            <!-- lista del header, que van dentro del menu expandible o se muestran normal-->
-            <div class="collapse navbar-collapse row" id="navbarNavDropdown">
-                <ul class="navbar-nav justify-content-center ps-3" *ngIf="header!=undefined">
-                    <li class="nav-item" *ngFor="let dato of header">
-                        <a class="nav-link active" href={{dato.referencia}}>{{dato.titulo}}</a>
-                    </li>
-
-                </ul>
+                <!--- Iconos del menu responsive-->
+                <!-- Icono del menu responsive -->
+                <div id="icono-nav" onclick="responsiveMenu()">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                <!--- Iconos de las redes sociales -->
+                <div class="redes">
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram-square"></i></a>
+                </div>
             </div>
+        </header>
+        <div class="presentacion">
+            <p class="bienvenida">Bienvenido</p>
+            <h2>Soy <span>Franco Frighetto</span>, Ingeniero en Sistemas de Información</h2>
+            <p class="descripcion">Este es mi Portafolio</p>
+            <a href="#aboutme">Ir a Portafolio</a>
         </div>
-        <a class="me-0" href="#" (click)="mostrarPerfil()">Perfil</a>
-    </nav>
-</header>
+    </div>
+</section>
+
+
+<!-- <a class="me-0" href="#" (click)="mostrarPerfil()">Perfil</a> -->
+
 
 <!-- <header>
     <nav class="navbar navbar-expand-lg bg-light">

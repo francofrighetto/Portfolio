@@ -9,7 +9,7 @@ import { Header } from '../app/Modelo/Header';
 export class PersonabdService {
 
   constructor(private http:HttpClient) { }
-  url='http://localhost:8080/';
+  url='https://portfolio-spring-back.herokuapp.com/';
 
   getPersonas(){
     return this.http.get<Persona>(this.url+"personas");
@@ -17,6 +17,18 @@ export class PersonabdService {
 
   getHeader(){
     return this.http.get<Header>(this.url+"header");
+  }
+
+  getProyectos(){
+    return this.http.get<Header>(this.url+"proyectos");
+  }
+
+  getHabilidades(){
+    return this.http.get<Header>(this.url+"habilidades");
+  }
+
+  getTitulosProyectos(){
+    return this.http.get<Header>(this.url+"proyectos/titulos");
   }
 
 }

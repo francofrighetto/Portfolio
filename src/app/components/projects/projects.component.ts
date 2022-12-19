@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { PersonabdService } from 'src/app/personabd.service';
 import { DatosPortfolioService } from 'src/app/services/datos-portfolio.service';
 
 @Component({
@@ -8,11 +9,13 @@ import { DatosPortfolioService } from 'src/app/services/datos-portfolio.service'
 })
 export class ProjectsComponent implements OnInit {
 
-  constructor(private datosPortfolio:DatosPortfolioService) { }
-  datosProjects:any;
+  constructor(private service:PersonabdService) { }
+  proyectos:any;
+
+
   ngOnInit(): void {
-    this.datosPortfolio.obtenerDatos().subscribe(data =>{ console.log(data);
-      this.datosProjects=data.projects;
+    this.service.getHeader().subscribe(data =>{ 
+      this.proyectos=data;
     });
   }
 

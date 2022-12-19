@@ -1,26 +1,165 @@
-ul {
-    list-style: none;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600&display=swap');
+#inicio {
+    background: linear-gradient( rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url("../../../assets/images/fondo-compu.jpg");
+    background-size: cover;
+    /* para que la imagen se adapte al tamaño de la pantalla */
+    background-position: center center;
+    /* para que la imagen se posicione en el centro */
+    height: 100vh;
+    /* para que la imagen ocupe todo el alto de la pantalla */
 }
 
-.barranav nav ul {
-    text-align: center;
-    list-style: none;
-    max-width: 100%;
-}
 
-nav ul a {
-    font-style: normal;
-}
+/* para que el header se posicione en el centro */
 
-nav ul li:hover>ul {
-    display: block;
-}
-
-.width-100 {
+header {
+    background-color: rgba(20, 20, 20, 0.8);
+    /* para que el fondo sea transparente */
+    position: fixed;
+    /* para que el header se mantenga fijo */
     width: 100%;
-    max-width: 100%;
+    /* para que el header ocupe todo el ancho de la pantalla */
+    z-index: 100;
+    /* para que el header se mantenga por encima de los demás elementos */
+    top: 0;
+    /* para que el header se mantenga en la parte superior de la pantalla */
+    padding: 0%;
 }
 
-li:hover {
-    background-color: rgb(220, 220, 220);
+
+/* para que el contenido del header se mantenga centrado */
+
+.contenido header .contenido-header {
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width:767px) {
+    .contenido header .contenido-header {
+        justify-content: start;
+        align-items: start;
+    }
+}
+
+
+/* para que el titulo se mantenga centrado */
+
+.contenido header .contenido-header h1 {
+    text-align: center;
+    color: #ff5080;
+}
+
+span {
+    color: white;
+}
+
+
+/* para que el menu se mantenga centrado */
+
+.contenido header .contenido-header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+
+/* para que el menu se mantenga centrado */
+
+.contenido header .contenido-header nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 12px;
+    font-weight: 400;
+    transition: .5s;
+}
+
+.contenido header .contenido-header nav ul li a:hover {
+    /* para cuando pasas el cursos sobre las letras se pongan en color*/
+    color: #ff5080;
+    background-color: #252525;
+}
+
+.contenido header .contenido-header .redes a {
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    margin-left: 10px;
+    transition: .5s;
+}
+
+.contenido header .contenido-header .redes a:hover {
+    color: #ff5080;
+}
+
+.contenido header .contenido-header .seleccionado {
+    color: #ff5080;
+}
+
+.contenido .presentacion {
+    max-width: 1100px;
+    /* para que el contenido se mantenga centrado */
+    height: 100vh;
+    /* para que el contenido ocupe todo el alto de la pantalla */
+    margin: auto;
+    /* para que el contenido se mantenga centrado */
+    color: #fff;
+    /* para que el texto sea blanco */
+    display: flex;
+    /* para que el contenido se mantenga centrado */
+    flex-direction: column;
+    /* para que el contenido se mantenga centrado */
+    align-items: center;
+    /* para que el contenido se mantenga centrado */
+    justify-content: center;
+    /* para que el contenido se mantenga centrado */
+}
+
+.contenido .presentacion .bienvenida {
+    font-size: 16px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.contenido .presentacion h2 {
+    font-size: 55px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.contenido .presentacion h2 span {
+    font-size: 55px;
+    color: #ff5080;
+}
+
+.contenido .presentacion .descripcion {
+    max-width: 700px;
+    margin: 25px auto;
+    font-size: 18px;
+    text-align: center;
+}
+
+.contenido .presentacion a {
+    text-decoration: none;
+    display: inline-block;
+    margin: 25px;
+    padding: 20px 25px;
+    border: 2px solid #fff;
+    border-radius: 50px;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: .5s;
+}
+
+.contenido .presentacion a:hover {
+    background-color: #9b2cf0;
+}
+
+#icono-nav {
+    color: #fff;
+    display: none;
 }
