@@ -21,6 +21,9 @@ import { LoginComponent } from './components/login/login.component';
 import { Timeline2Component } from './components/timeline2/timeline2.component';
 import { ProjectIdeaCarouselComponent } from './components/project-idea-carousel/project-idea-carousel.component';
 import { BtnSubirComponent } from './components/btn-subir/btn-subir.component';
+import { DniComponent } from './components/dni/dni.component';
+import { ProgressHabilidadesComponent } from './components/progress-habilidades/progress-habilidades.component';
+import { Timeline3Component } from './components/timeline3/timeline3.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +42,10 @@ import { BtnSubirComponent } from './components/btn-subir/btn-subir.component';
     LoginComponent,
     Timeline2Component,
     ProjectIdeaCarouselComponent,
-    BtnSubirComponent
+    BtnSubirComponent,
+    DniComponent,
+    ProgressHabilidadesComponent,
+    Timeline3Component
   ],
   imports: [
     BrowserModule,

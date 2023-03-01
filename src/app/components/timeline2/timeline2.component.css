@@ -73,7 +73,7 @@ body {
 .container .date {
     position: absolute;
     display: inline-block;
-    top: calc(50% - 8px);
+    top: calc(50% - 40px);
     text-align: center;
     font-size: 14px;
     font-weight: bold;
@@ -145,11 +145,11 @@ body {
 
 @media (max-width: 767.98px) {
     .timeline::after {
-        left: 90px;
+        left: 50px;
     }
     .container {
         width: 100%;
-        padding-left: 120px;
+        padding-left: 80px;
         padding-right: 30px;
     }
     .container.right {
@@ -160,11 +160,11 @@ body {
     }
     .container.left::after,
     .container.right::after {
-        left: 82px;
+        left: 45px;
     }
     .container.left::before,
     .container.right::before {
-        left: 100px;
+        left: 50px;
         border-color: transparent #006E51 transparent transparent;
     }
     .container.left .date,
@@ -175,7 +175,7 @@ body {
     .container.left .icon,
     .container.right .icon {
         right: auto;
-        left: 146px;
+        left: 100px;
     }
     .container.left .content,
     .container.right .content {

@@ -1,0 +1,31 @@
+<div class="resume  ">
+    <div class="func row  justify-content-center">
+        <div class="work col-5 col-lg-4">
+            <h3><i class="fa fa-briefcase"></i>Experiencia</h3>
+            <ul>
+                <li *ngFor="let exp of trabajo">
+                    <span>{{exp.nombre}}</span>
+                    <small>{{exp.especializacion}}</small>
+                    <small>{{exp.desde}}-{{exp.hasta}}</small>
+                </li>
+
+                <!-- <li><span>Technical Consultant -<br>Web Design</span><small>Fiserv</small><small>Apr 2018 - Now</small></li>
+                <li><span>Web Designer</span><small>Lynden</small><small>Jan 2018 - Apr 2018</small></li>
+                <li><span>Intern - Web Design</span><small>Lynden</small><small>Aug 2017 - Dec 2017</small></li> -->
+            </ul>
+        </div>
+        <div class="edu col-5 col-lg-4">
+            <h3><i class="fa fa-graduation-cap"></i>Educación</h3>
+            <ul>
+                <li *ngFor="let e of edu">
+                    <span>{{e.nombre}}</span>
+                    <small>{{e.especializacion}}</small>
+                    <small>{{e.desde}}-{{e.hasta}}</small>
+                </li>
+                <!-- <li><span>Bachelor of Science<br>Web Design and Development</span><small>BYU-Idaho</small><small>Jan. 2016 - Apr. 2018</small></li>
+                <li><span>Computer Science</span><small>Edmonds Community College</small><small>Sept. 2014 - Dec. 2015</small></li>
+                <li><span>High School</span><small>Henry M. Jackson High School</small><small>Jan. 2013 - Jun. 2015</small></li> -->
+            </ul>
+        </div>
+    </div>
+</div>
