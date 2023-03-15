@@ -5,6 +5,8 @@
 
 .skills {
     padding: 70px 20px;
+    width: 80%;
+    margin: auto;
 }
 
 .skills .content .development-wrapper .development-title {
@@ -16,8 +18,8 @@
 
 .skills .content .development-wrapper .skills-bar-container {
     position: relative;
-    width: 100%;
     list-style-type: none;
+    margin: auto;
 }
 
 .skills .content .development-wrapper .skills-bar-container li {
@@ -44,7 +46,7 @@
     background: #ececec;
     position: relative;
     width: 100%;
-    height: 10px;
+    height: 15px;
 }
 
 .skills .content .development-wrapper .skills-bar-container li .bar-container .progressbar {

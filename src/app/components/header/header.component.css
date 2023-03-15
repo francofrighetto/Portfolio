@@ -163,3 +163,41 @@ span {
     color: #fff;
     display: none;
 }
+
+.btn-descarga {
+    background-color: #ebe9e953;
+}
+
+.typing-text {
+    /* ocultar el texto completo */
+    border-right: .15em solid orange;
+    /* mostrar un borde como cursor de escritura */
+    white-space: nowrap;
+    /* agregar un espacio entre cada letra */
+    animation: typing 4s steps(30, end), blink-caret .5s step-end infinite;
+}
+
+
+/* animación de escritura */
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+    to {
+        width: 100%
+    }
+}
+
+
+/* animación del cursor parpadeante */
+
+@keyframes blink-caret {
+    from,
+    to {
+        border-color: transparent
+    }
+    50% {
+        border-color: orange
+    }
+}
