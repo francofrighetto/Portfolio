@@ -1,6 +1,6 @@
 /*footer a {
     text-decoration: none;
-} 
+}
 header {
     position: absolute;
     top: 0;
@@ -19,7 +19,7 @@ header ul
   width: 100%;
   height: 100%;
   background-size: 100%;
-} 
+}
 
 .hs {
     position: fixed;
@@ -43,4 +43,17 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 .titulos-generales {
     font-size: 43px;
+    position: relative;
+}
+
+.titulos-generales::after {
+    position: absolute;
+    content: '';
+    top: 100%;
+    height: 3px;
+    width: 150px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    background: #3498db;
 }

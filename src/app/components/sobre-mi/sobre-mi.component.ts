@@ -8,12 +8,15 @@ import { Component, OnInit } from '@angular/core';
 export class SobreMiComponent implements OnInit {
 
   constructor() { }
-
+  date:Date;
+  anio:number;
   ngOnInit(): void {
     let posision = window.scrollY;
     window.scrollY = 0;
-    console.log(posision);
-    
+
+    this.date = new Date();
+    this.anio = this.date.getFullYear();
+    this.anio -= 2022;
   }
 
 }

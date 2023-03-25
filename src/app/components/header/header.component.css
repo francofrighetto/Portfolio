@@ -82,6 +82,14 @@ span {
     background-color: #252525;
 }
 
+.redes {
+    position: absolute;
+    width: 100%;
+    text-align: end;
+    margin-right: 70px;
+    z-index: 101;
+}
+
 .contenido header .contenido-header .redes a {
     text-decoration: none;
     color: #fff;
@@ -199,5 +207,11 @@ span {
     }
     50% {
         border-color: orange
+    }
+}
+
+@media (max-width:770px) {
+    .redes {
+        margin-top: 14px;
     }
 }

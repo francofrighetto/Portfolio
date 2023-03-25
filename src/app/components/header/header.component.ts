@@ -17,13 +17,12 @@ export class HeaderComponent implements OnInit {
 
 
   ngOnInit(): void {
-    this.service.getHeader().subscribe(data =>{ 
+    this.service.getHeader().subscribe(data =>{
       this.header=data;
     });
 
     this.serviceJSON.obtenerDatos().subscribe(data=>{
       this.headerJSON=data.header;
-      console.log(this.headerJSON);
     })
 
   }
@@ -33,10 +32,7 @@ export class HeaderComponent implements OnInit {
     const login = document.getElementById("login");
 
     if (login!= null){
-      console.log(login.style.display);
       login.style.display="inline";
-      
-      
     }
   }
 

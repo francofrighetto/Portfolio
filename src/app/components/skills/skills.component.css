@@ -31,3 +31,17 @@
     width: 90px;
     max-width: 90px;
 }
+
+.web {
+    background-color: #f3f3f3;
+    margin: 0;
+}
+
+.front,
+.back {
+    padding: 0;
+}
+
+.otros {
+    margin: 0;
+}

@@ -1,3 +1,7 @@
 a {
     text-decoration: none;
-} 
+}
+
+.list-unstyled {
+    margin-right: 30px;
+}

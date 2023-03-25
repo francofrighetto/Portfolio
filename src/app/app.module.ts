@@ -24,6 +24,7 @@ import { BtnSubirComponent } from './components/btn-subir/btn-subir.component';
 import { DniComponent } from './components/dni/dni.component';
 import { ProgressHabilidadesComponent } from './components/progress-habilidades/progress-habilidades.component';
 import { Timeline3Component } from './components/timeline3/timeline3.component';
+import { CardProjectComponent } from './components/card-project/card-project.component';
 
 @NgModule({
   declarations: [
@@ -45,7 +46,8 @@ import { Timeline3Component } from './components/timeline3/timeline3.component';
     BtnSubirComponent,
     DniComponent,
     ProgressHabilidadesComponent,
-    Timeline3Component
+    Timeline3Component,
+    CardProjectComponent
   ],
   imports: [
     BrowserModule,

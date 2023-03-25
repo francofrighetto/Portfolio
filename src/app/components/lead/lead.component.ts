@@ -17,7 +17,7 @@ export class LeadComponent implements OnInit {
 
 
   ngOnInit(): void {
-    // this.service.getPersonas().subscribe(data =>{ 
+    // this.service.getPersonas().subscribe(data =>{
     //   this.personas=data;
     //   this.personas=this.personas[0];
 
@@ -27,7 +27,6 @@ export class LeadComponent implements OnInit {
     this.serviceJSON.obtenerDatos().subscribe( data => {
       this.personasJSON = data.persona;
       this.personasJSON=this.personasJSON[0];
-      console.log(this.personasJSON);
     });
 
   }
