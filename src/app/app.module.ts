@@ -25,6 +25,14 @@ import { DniComponent } from './components/dni/dni.component';
 import { ProgressHabilidadesComponent } from './components/progress-habilidades/progress-habilidades.component';
 import { Timeline3Component } from './components/timeline3/timeline3.component';
 import { CardProjectComponent } from './components/card-project/card-project.component';
+import * as firebase from 'firebase/app';
+import { environment } from 'src/environments/environment';
+import { PresentacionComponent } from './components/presentacion/presentacion.component';
+import { ProyectoComponent } from './components/proyecto/proyecto.component';
+
+
+
+
 
 @NgModule({
   declarations: [
@@ -47,7 +55,9 @@ import { CardProjectComponent } from './components/card-project/card-project.com
     DniComponent,
     ProgressHabilidadesComponent,
     Timeline3Component,
-    CardProjectComponent
+    CardProjectComponent,
+    PresentacionComponent,
+    ProyectoComponent
   ],
   imports: [
     BrowserModule,
@@ -59,7 +69,7 @@ import { CardProjectComponent } from './components/card-project/card-project.com
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { 
+export class AppModule {
 
-  
+
 }
