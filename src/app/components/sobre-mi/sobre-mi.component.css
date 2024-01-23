@@ -6,3 +6,7 @@
 #aboutme {
     /* background-color: rgb(235, 235, 235); */
 }
+
+.info p {
+    font-size: large;
+}

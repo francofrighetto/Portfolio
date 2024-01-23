@@ -1,83 +1,135 @@
 <div class="habilidades container mt-5 pt-5" id="skills">
     <h2 class=" text-center mb-4 titulos-generales mt-3">Habilidades</h2>
+    <div class="row width-100 justify-content-around">
+        <div class="row col-12 mt-5 ">
+            <h2 class="text-center ">Otros lenguajes
 
-    <!-- <div class="row individuales">
-        <div class="col-4 col-sm-3 columna text-center m-auto" *ngFor="let dato of datosSkills">
-            <img src={{dato.image}} width="50px">
-            <p class="col-8 m-auto pb-3">{{dato.nombre}}</p>
+
+            </h2>
+            <div class="d-flex row width-100 justify-content-center mt-3">
+                <div class=" text-center me-4 ms-4 col-len ">
+                    <img src="../../../assets/images/java.png " width="50px ">
+                    <p class="col-8 m-auto pb-3 ">Java</p>
+                </div>
+                <div class=" text-center me-4 ms-4 col-len ">
+                    <img src="../../../assets/images/python.png " width="50px ">
+                    <p class="col-8 m-auto pb-3 ">Python</p>
+                </div>
+                <div class=" text-center me-4 ms-4 col-len ">
+                    <img src="../../../assets/images/php.png " width="50px ">
+                    <p class="col-8 m-auto pb-3 ">PHP</p>
+                </div>
+                <div class=" text-center me-4 ms-4 col-len ">
+                    <img src="../../../assets/images/typescript.png " width="50px ">
+                    <p class="col-8 m-auto pb-3 ">TypeScript</p>
+                </div>
+                <div class=" text-center me-4 ms-4 col-len ">
+                    <img src="../../../assets/images/express.png" width="50px ">
+                    <p class="col-8 m-auto pb-3 ">Express</p>
+                </div>
+            </div>
         </div>
-    </div> -->
+
+
+        <div class="row col-12 mt-5">
+            <h2 class="text-center">Otros </h2>
+            <div class="d-flex row width-100 justify-content-center mt-3">
+                <div class=" text-center me-4 ms-4 col-len ">
+                    <img src="../../../assets/images/git.png " width="50px ">
+                    <p class="col-8 m-auto pb-3 ">Git</p>
+                </div>
+                <div class=" text-center me-4 ms-4 col-len ">
+                    <img src="../../../assets/images/github.png " width="50px ">
+                    <p class="col-8 m-auto pb-3 ">GitHub</p>
+                </div>
+
+                <div class=" text-center me-4 ms-4 col-len ">
+                    <img src="../../../assets/images/uml.png " width="50px ">
+                    <p class="col-8 m-auto pb-3 ">UML</p>
+                </div>
+                <div class=" text-center me-4 ms-4 col-len ">
+                    <img src="../../../assets/images/node-js.png " width="50px ">
+                    <p class="col-8 m-auto pb-3 ">Node</p>
+                </div>
+                <div class=" text-center me-4 ms-4 col-len ">
+                    <img src="../../../assets/images/nginx.png" width="50px ">
+                    <p class="col-8 m-auto pb-3 ">Nginx</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
 </div>
-<app-progress-habilidades></app-progress-habilidades>
-<div class="row width-100 justify-content-around web">
+
+<!--
     <h2 class="text-center mt-5 pt-3 fs-1">Web</h2>
 
     <div class="row col-11 col-lg-5 front mt-4">
         <h2 class="text-center ms-0">Front-end</h2>
         <div class="d-flex row width-100 mt-3">
-            <!-- si pongo columnas es col-6 col-sm-3 -->
-            <div class="  text-center col-len mx-auto">
-                <img src="../../../assets/images/html.png " width="50px ">
-                <p class="col-8 pb-3 mx-auto">HTML</p>
-            </div>
-            <div class=" text-center col-len mx-auto">
-                <img src="../../../assets/images/css.png " width="50px ">
-                <p class="col-8 pb-3 mx-auto">CSS</p>
-            </div>
-            <div class=" text-center col-len mx-auto ">
-                <img src="../../../assets/images/bootstrap.png " width="50px ">
-                <p class="col-8 pb-3  ">Bootstrap</p>
-            </div>
-            <div class=" text-center col-len mx-auto ">
-                <img src="../../../assets/images/angular.png " width="50px ">
-                <p class="col-8 pb-3  ">Angular</p>
-            </div>
-            <div class=" text-center col-len mx-auto ">
-                <img src=" ../../../assets/images/js.png " width="50px " class=" ">
-                <p class="col-8 pb-3  ">JavaScript</p>
-            </div>
-            <div class=" text-center col-len mx-auto ">
-                <img src="../../../assets/images/typescript.png " width="50px " class="">
-                <p class="col-8 pb-3 ">TypeScript</p>
-            </div>
-            <div class=" text-center col-len mx-auto ">
-                <img src="../../../assets/images/angular-material-logo.svg " width="50px " class="">
-                <p class="col-8 pb-3 mx-auto">Angular Material</p>
-            </div>
-            <div class=" text-center col-len mx-auto ">
-                <img src="../../../assets/images/figma.png " width="50px " class="">
-                <p class="col-8 pb-3 mx-auto">Figma</p>
-            </div>
-
-
-
-
-
-        </div>
+            <!-- si pongo columnas es col-6 col-sm-3
+    <div class="  text-center col-len mx-auto">
+        <img src="../../../assets/images/html.png " width="50px ">
+        <p class="col-8 pb-3 mx-auto">HTML</p>
     </div>
-    <div class="row col-11 col-lg-5 back mt-4 ">
-        <h2 class="text-center ">Back-end</h2>
-        <div class="d-flex row width-100 mt-3">
-            <!-- si pongo columnas es col-4 col-sm-3 -->
-            <div class=" col-len text-center mx-auto ">
-                <img src="../../../assets/images/php.png " width="50px ">
-                <p class="col-8 m-auto pb-3 ">PHP</p>
-            </div>
-            <!-- <div class="col-len text-center mx-auto ">
+    <div class=" text-center col-len mx-auto">
+        <img src="../../../assets/images/css.png " width="50px ">
+        <p class="col-8 pb-3 mx-auto">CSS</p>
+    </div>
+    <div class=" text-center col-len mx-auto ">
+        <img src="../../../assets/images/bootstrap.png " width="50px ">
+        <p class="col-8 pb-3  ">Bootstrap</p>
+    </div>
+    <div class=" text-center col-len mx-auto ">
+        <img src="../../../assets/images/angular.png " width="50px ">
+        <p class="col-8 pb-3  ">Angular</p>
+    </div>
+    <div class=" text-center col-len mx-auto ">
+        <img src=" ../../../assets/images/js.png " width="50px " class=" ">
+        <p class="col-8 pb-3  ">JavaScript</p>
+    </div>
+    <div class=" text-center col-len mx-auto ">
+        <img src="../../../assets/images/typescript.png " width="50px " class="">
+        <p class="col-8 pb-3 ">TypeScript</p>
+    </div>
+    <div class=" text-center col-len mx-auto ">
+        <img src="../../../assets/images/angular-material-logo.svg " width="50px " class="">
+        <p class="col-8 pb-3 mx-auto">Angular Material</p>
+    </div>
+    <div class=" text-center col-len mx-auto ">
+        <img src="../../../assets/images/figma.png " width="50px " class="">
+        <p class="col-8 pb-3 mx-auto">Figma</p>
+    </div>
+
+
+
+
+
+</div>
+</div>
+<div class="row col-11 col-lg-5 back mt-4 ">
+    <h2 class="text-center ">Back-end</h2>
+    <div class="d-flex row width-100 mt-3">
+        <!-- si pongo columnas es col-4 col-sm-3
+        <div class=" col-len text-center mx-auto ">
+            <img src="../../../assets/images/php.png " width="50px ">
+            <p class="col-8 m-auto pb-3 ">PHP</p>
+        </div>
+        <!-- <div class="col-len text-center mx-auto ">
                 <img src="../../../assets/images/spring boot.png " width="50px ">
                 <p class="col-8 pb-3 ">SpringBoot</p>
-            </div> -->
-            <div class="col-len text-center mx-auto ">
-                <img src="../../../assets/images/api.png " width="50px ">
-                <p class="col-8 m-auto pb-3 ">API's</p>
             </div>
-            <div class="col-len text-center mx-auto">
-                <img src="../../../assets/images/base-de-datos.png " width="50px ">
-                <p class="col-8 pb-3 ">SQL</p>
-            </div>
-
+        <div class="col-len text-center mx-auto ">
+            <img src="../../../assets/images/api.png " width="50px ">
+            <p class="col-8 m-auto pb-3 ">API's</p>
         </div>
+        <div class="col-len text-center mx-auto">
+            <img src="../../../assets/images/base-de-datos.png " width="50px ">
+            <p class="col-8 pb-3 ">SQL</p>
+        </div>
+
     </div>
+</div>
 
 </div>
 
@@ -119,66 +171,7 @@
             <!-- <div class=" text-center me-4 ms-4 col-len ">
                 <img src="../../../assets/images/docker.png " width="50px ">
                 <p class="col-8 m-auto pb-3 ">Docker</p>
-            </div> -->
-            <div class=" text-center me-4 ms-4 col-len ">
-                <img src="../../../assets/images/linux.png " width="50px ">
-                <p class="col-8 m-auto pb-3 ">Linux</p>
             </div>
-            <div class=" text-center me-4 ms-4 col-len ">
-                <img src="../../../assets/images/uml.png " width="50px ">
-                <p class="col-8 m-auto pb-3 ">UML</p>
-            </div>
-
-        </div>
-    </div>
-
-
-
-
-</div>
-
-
-
-<!-- <div class="row col-12 mt-5 ">
-    <h2 class="text-center ">Otros lenguajes
-
-
-    </h2>
-    <div class="d-flex row width-100 justify-content-center mt-3">
-        <div class=" text-center me-4 ms-4 col-len ">
-            <img src="../../../assets/images/java.png " width="50px ">
-            <p class="col-8 m-auto pb-3 ">Java</p>
-        </div>
-        <div class=" text-center me-4 ms-4 col-len ">
-            <img src="../../../assets/images/python.png " width="50px ">
-            <p class="col-8 m-auto pb-3 ">Python</p>
-        </div>
-        <div class=" text-center me-4 ms-4 col-len ">
-            <img src="../../../assets/images/csharp.png " width="50px ">
-            <p class="col-8 m-auto pb-3 ">C#</p>
-        </div>
-
-
-    </div>
-</div>
-
-
-<div class="row col-12 mt-5">
-    <h2 class="text-center">Otros </h2>
-    <div class="d-flex row width-100 justify-content-center mt-3">
-        <div class=" text-center me-4 ms-4 col-len ">
-            <img src="../../../assets/images/git.png " width="50px ">
-            <p class="col-8 m-auto pb-3 ">Git</p>
-        </div>
-        <div class=" text-center me-4 ms-4 col-len ">
-            <img src="../../../assets/images/github.png " width="50px ">
-            <p class="col-8 m-auto pb-3 ">GitHub</p>
-        </div>
-        <!-- <div class=" text-center me-4 ms-4 col-len ">
-            <img src="../../../assets/images/docker.png " width="50px ">
-            <p class="col-8 m-auto pb-3 ">Docker</p>
-        </div> -->
-<!--
 <div class=" text-center me-4 ms-4 col-len ">
     <img src="../../../assets/images/linux.png " width="50px ">
     <p class="col-8 m-auto pb-3 ">Linux</p>
@@ -188,6 +181,33 @@
     <p class="col-8 m-auto pb-3 ">UML</p>
 </div>
 
+</div>
+</div>
+
+
+
 
 </div>
+
+<div class="row col-11 col-lg-5 front mt-4">
+    <h2 class="text-center ms-0">Front-end</h2>
+    <div class="d-flex row width-100">
+        <div class="text-center col-len mx-auto">
+            <img src="../../../assets/images/bootstrap.png" width="50px ">
+            <p class="col-8 mx-auto">Bootstrap</p>
+        </div>
+        <div class="text-center col-len mx-auto" *ngFor="let hab of datosSkills" [style.opacity]="hab.habilitado==1? 1:0.5">
+            <img src="../../../assets/images/{{hab.imagen}}" width="50px ">
+            <p class="col-8 mx-auto">{{hab.nombre}}</p>
+            <div class="d-flex">
+                <div class="mb-3 me-2">
+                    <i class="bi bi-eye-fill" *ngIf="hab.habilitado==0" (click)="habilitar(hab)"></i>
+                    <i class="bi bi-eye-slash-fill" *ngIf="hab.habilitado==1" (click)="habilitar(hab)"></i>
+                </div>
+                <i class="bi bi-pencil-square me-2"></i>
+                <i class="bi bi-trash3-fill"></i>
+            </div>
+        </div>
+
+    </div>
 </div> -->
