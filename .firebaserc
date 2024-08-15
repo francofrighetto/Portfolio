@@ -1,5 +1,10 @@
 {
   "projects": {
-    "default": "angular-portfolio14"
-  }
+    "default": "frighettofranco",
+    "francofrighetto": "francofrighetto-f6dbe",
+    "frighettofranco": "frighettofranco"
+  },
+  "targets": {},
+  "etags": {},
+  "dataconnectEmulatorConfig": {}
 }
