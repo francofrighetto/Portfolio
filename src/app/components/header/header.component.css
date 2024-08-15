@@ -87,7 +87,10 @@ span {
     width: 100%;
     text-align: end;
     margin-right: 70px;
-    z-index: 101;
+}
+
+.indices {
+    z-index: 10001;
 }
 
 .contenido header .contenido-header .redes a {

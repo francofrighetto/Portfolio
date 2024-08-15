@@ -2,7 +2,14 @@
     "persona": [{
         "nombre": "Franco",
         "apellido": "Frighetto",
-        "titulo": "Ingeniero en Sistemas de Información"
+        "titulo": "Ingeniero en Sistemas de Información",
+        "contacto": [{
+            "linkedin": "https://www.linkedin.com/in/franco-juli%C3%A1n-frighetto-535758211/",
+            "telegram": "https://t.me/francofrighetto",
+            "github": "https://github.com/francofrighetto",
+            "mail": "frighetto23@gmail.com"
+        }],
+        "copyright": 2023
     }],
 
     "fotolead": "/assets/images/fondo-compu.jpg",
@@ -59,10 +66,10 @@
         {
             "id": 2,
             "ambito": "curso",
-            "nombre": "#SéProgramar",
+            "nombre": "#SéProgramar, #YoProgramo",
             "lugar": "",
             "image": "/assets/images/ministerio.jpg",
-            "desde": "2021",
+            "desde": "2021 y 2022",
             "hasta": "",
             "especializacion": "Argentina Programa",
             "extra": "",
@@ -70,25 +77,8 @@
             "svg": "award-fill.svg",
             "categoria": "curso"
 
-
-
         },
-        {
-            "id": 3,
-            "ambito": "curso",
-            "nombre": "#YoProgramo",
-            "lugar": "",
-            "image": "/assets/images/ministerio.jpg",
-            "desde": "2022",
-            "hasta": "",
-            "especializacion": "Argentina Programa",
-            "extra": "",
-            "link": "",
-            "svg": "award-fill.svg",
-            "categoria": "curso"
 
-
-        },
         {
             "ambito": "trabajo",
             "nombre": "Maser Informatica",
@@ -102,7 +92,6 @@
             "categoria": "trabajo"
 
         }
-
 
 
 
@@ -210,41 +199,25 @@
         }
     ],
     "education": [{
-            "id": 0,
-            "nombre": "Instituto Secundario Bernardino Rivadavia",
-            "especializacion": "Economia",
-            "desde": "2014",
-            "hasta": "2019",
-            "ambito": "Titulo secundario"
-        },
-        {
             "id": 1,
             "especializacion": "Universidad Tecnologica Nacional",
             "nombre": "Ingeniería en Sistemas de Informacion",
             "desde": "2020",
-            "hasta": "",
+            "hasta": "Actualmente",
             "ambito": "Carrera de grado"
         },
         {
             "id": 2,
-            "nombre": "#SéProgramar",
+            "nombre": "#SéProgramar, #YoProgramo",
             "especializacion": "Argentina Programa - Curso",
             "image": "/assets/images/ministerio.jpg",
-            "desde": "2021",
+            "desde": "2021 y 2022",
             "certificado": "https://github.com/francofrighetto/Certificados/blob/main/%23SeProgramar.pdf",
             "hasta": "",
             "ambito": "Curso"
 
-        },
-        {
-            "nombre": "#YoProgramo",
-            "especializacion": "Argentina Programa - Curso",
-            "image": "/assets/images/ministerio.jpg",
-            "desde": "2022",
-            "certificado": "",
-            "hasta": "",
-            "ambito": "Curso"
         }
+
     ],
     "footer": [{
             "href": "https://www.linkedin.com/in/franco-frighetto-535758211/",
@@ -324,10 +297,5 @@
             "porcentaje": 85,
             "porcentaje_inicial": 0
         }
-    ],
-    "borrar": [{
-        "nombre": "Docker",
-        "image": "/assets/images/docker.png"
-    }]
-
+    ]
 }

@@ -1,9 +1,12 @@
+import { Contacto } from "./Contacto";
 
 export class Persona{
     id_persona:number;
     nombre:String;
     apellido:String;
     titulo:String;
+    copyright?:string;
+    contacto:Contacto=new Contacto;
 
 
 
