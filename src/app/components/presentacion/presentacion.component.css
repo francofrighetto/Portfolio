@@ -34,8 +34,9 @@ html {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 0
-}
+    position: absolute;
+    bottom: -70px;
+  }
 
 .intro-skills h3 {
     font-size: 1.3rem;
@@ -313,13 +314,13 @@ img {
     justify-content: center;
     padding: 2rem;
     position: relative;
-    width: 90%;
+    width: 95%;
     margin: auto;
 }
 
 .About-text p {
     font-weight: 500;
-    margin: 0
+    margin: 0;
 }
 
 .About-text p span {

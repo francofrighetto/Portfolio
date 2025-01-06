@@ -1,46 +1,52 @@
 <div class="px-3 my-4 pt-1" id="experience">
-    <h2 class="mt-5 pt-2 mb-4 text-center titulos-generales">Experiencia</h2>
-    <div class="resume">
-        <div class="func row  justify-content-center">
-            <div class="work col-10 col-md-5 col-lg-4">
-                <h3>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-briefcase-fill" viewBox="0 0 16 16">
-                    <path d="M6.5 1A1.5 1.5 0 0 0 5 2.5V3H1.5A1.5 1.5 0 0 0 0 4.5v1.384l7.614 2.03a1.5 1.5 0 0 0 .772 0L16 5.884V4.5A1.5 1.5 0 0 0 14.5 3H11v-.5A1.5 1.5 0 0 0 9.5 1h-3zm0 1h3a.5.5 0 0 1 .5.5V3H6v-.5a.5.5 0 0 1 .5-.5z"/>
-                    <path d="M0 12.5A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5V6.85L8.129 8.947a.5.5 0 0 1-.258 0L0 6.85v5.65z"/>
-                  </svg> Trabajo
-                </h3>
-                <ul>
-                    <li *ngFor="let exp of trabajo">
-                        <span>{{exp.nombre}}</span>
-                        <small>{{exp.especializacion}}</small>
-                        <small>{{exp.ambito}}</small>
-                        <small>{{exp.desde}}-{{exp.hasta}}</small>
-                    </li>
+  <h2 class="mt-5 pt-2 mb-4 text-center titulos-generales">Experiencia</h2>
+  <div class="resume">
+    <div class="func row  justify-content-center">
+      <div class="work col-10 col-md-5 col-lg-4">
+        <h3>
+          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+            class="bi bi-briefcase-fill" viewBox="0 0 16 16">
+            <path
+              d="M6.5 1A1.5 1.5 0 0 0 5 2.5V3H1.5A1.5 1.5 0 0 0 0 4.5v1.384l7.614 2.03a1.5 1.5 0 0 0 .772 0L16 5.884V4.5A1.5 1.5 0 0 0 14.5 3H11v-.5A1.5 1.5 0 0 0 9.5 1h-3zm0 1h3a.5.5 0 0 1 .5.5V3H6v-.5a.5.5 0 0 1 .5-.5z" />
+            <path
+              d="M0 12.5A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5V6.85L8.129 8.947a.5.5 0 0 1-.258 0L0 6.85v5.65z" />
+          </svg> Trabajo
+        </h3>
+        <ul>
+          <li *ngFor="let exp of trabajo">
+            <span>{{exp.nombre}}</span>
+            <small>{{exp.especializacion}}</small>
+            <small>{{exp.ambito}}</small>
+            <small>{{exp.desde}} - {{exp.hasta}}</small>
+          </li>
 
-                    <!-- <li><span>Technical Consultant -<br>Web Design</span><small>Fiserv</small><small>Apr 2018 - Now</small></li>
+          <!-- <li><span>Technical Consultant -<br>Web Design</span><small>Fiserv</small><small>Apr 2018 - Now</small></li>
                 <li><span>Web Designer</span><small>Lynden</small><small>Jan 2018 - Apr 2018</small></li>
                 <li><span>Intern - Web Design</span><small>Lynden</small><small>Aug 2017 - Dec 2017</small></li> -->
-                </ul>
-            </div>
-            <div class="edu col-10 col-md-5 col-lg-4 work">
-                <h3>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-mortarboard-fill" viewBox="0 0 16 16">
-                        <path d="M8.211 2.047a.5.5 0 0 0-.422 0l-7.5 3.5a.5.5 0 0 0 .025.917l7.5 3a.5.5 0 0 0 .372 0L14 7.14V13a1 1 0 0 0-1 1v2h3v-2a1 1 0 0 0-1-1V6.739l.686-.275a.5.5 0 0 0 .025-.917l-7.5-3.5Z"/>
-                        <path d="M4.176 9.032a.5.5 0 0 0-.656.327l-.5 1.7a.5.5 0 0 0 .294.605l4.5 1.8a.5.5 0 0 0 .372 0l4.5-1.8a.5.5 0 0 0 .294-.605l-.5-1.7a.5.5 0 0 0-.656-.327L8 10.466 4.176 9.032Z"/>
-                      </svg> Educación
-                </h3>
-                <ul>
-                    <li *ngFor="let e of edu">
-                        <span>{{e.nombre}}</span>
-                        <small>{{e.especializacion}}</small>
-                        <small>{{e.ambito}}</small>
-                        <small>{{e.desde}}-{{e.hasta}}</small>
-                    </li>
-                    <!-- <li><span>Bachelor of Science<br>Web Design and Development</span><small>BYU-Idaho</small><small>Jan. 2016 - Apr. 2018</small></li>
+        </ul>
+      </div>
+      <div class="edu col-10 col-md-5 col-lg-4 work">
+        <h3>
+          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+            class="bi bi-mortarboard-fill" viewBox="0 0 16 16">
+            <path
+              d="M8.211 2.047a.5.5 0 0 0-.422 0l-7.5 3.5a.5.5 0 0 0 .025.917l7.5 3a.5.5 0 0 0 .372 0L14 7.14V13a1 1 0 0 0-1 1v2h3v-2a1 1 0 0 0-1-1V6.739l.686-.275a.5.5 0 0 0 .025-.917l-7.5-3.5Z" />
+            <path
+              d="M4.176 9.032a.5.5 0 0 0-.656.327l-.5 1.7a.5.5 0 0 0 .294.605l4.5 1.8a.5.5 0 0 0 .372 0l4.5-1.8a.5.5 0 0 0 .294-.605l-.5-1.7a.5.5 0 0 0-.656-.327L8 10.466 4.176 9.032Z" />
+          </svg> Educación
+        </h3>
+        <ul>
+          <li *ngFor="let e of edu">
+            <span>{{e.nombre}}</span>
+            <small>{{e.especializacion}}</small>
+            <small>{{e.ambito}}</small>
+            <small>{{e.desde}} - {{e.hasta}}</small>
+          </li>
+          <!-- <li><span>Bachelor of Science<br>Web Design and Development</span><small>BYU-Idaho</small><small>Jan. 2016 - Apr. 2018</small></li>
                 <li><span>Computer Science</span><small>Edmonds Community College</small><small>Sept. 2014 - Dec. 2015</small></li>
                 <li><span>High School</span><small>Henry M. Jackson High School</small><small>Jan. 2013 - Jun. 2015</small></li> -->
-                </ul>
-            </div>
-        </div>
+        </ul>
+      </div>
     </div>
+  </div>
 </div>

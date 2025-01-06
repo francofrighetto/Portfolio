@@ -659,7 +659,7 @@ h1 {
     justify-content: space-between;
     padding: 2rem
 }
-
+.proyect-0,
 .proyect-1,
 .proyect-2,
 .proyect-3,
@@ -715,7 +715,7 @@ h1 {
     flex-direction: column;
     justify-content: space-between
 }
-
+.img-proyect-0,
 .img-proyect-1,
 .img-proyect-2,
 .img-proyect-3,
@@ -729,7 +729,7 @@ h1 {
     transition: transform .3s ease, -webkit-transform .3s ease;
     width: 25rem
 }
-
+.img-proyect-0:hover,
 .img-proyect-1:hover,
 .img-proyect-2:hover,
 .img-proyect-3:hover,
@@ -737,6 +737,13 @@ h1 {
 .img-proyect-5:hover {
     -webkit-transform: scale(1.01);
     transform: scale(1.01)
+}
+
+.img-proyect-0 {
+    background: url(./../../../assets/images/sist_admin.jpeg);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover
 }
 
 .img-proyect-1 {
@@ -748,6 +755,20 @@ h1 {
 
 .img-proyect-2 {
     background: url(./../../../assets/images/ballesteros.png);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover
+}
+
+.img-proyect-3 {
+    background: url(./../../../assets/images/lector.png);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover
+}
+
+.img-proyect-4 {
+    background: url(./../../../assets/images/contrato_inteligente.png);
     background-position: 50%;
     background-repeat: no-repeat;
     background-size: cover
@@ -842,6 +863,7 @@ h1 {
         justify-content: center;
         width: 100%
     }
+    .img-proyect-0,
     .img-proyect-1,
     .img-proyect-2,
     .img-proyect-3,
@@ -863,6 +885,7 @@ h1 {
 
 @media only screen and (max-width: 438px) {
     .img-link,
+    .img-proyect-0,
     .img-proyect-1,
     .img-proyect-2,
     .img-proyect-3,
